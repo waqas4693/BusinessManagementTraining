@@ -1,0 +1,6 @@
+export { default as HomeHero } from './hero'
+export { default as HomeCourse } from './course'
+export { default as HomeFeature } from './feature'
+export { default as HomeFeature2 } from './feature-2'
+export { default as HomeVideo } from './video'
+export { default as HomeGallery } from './gallery'
