@@ -9,7 +9,7 @@ import { StyledButton } from '@/components/styled-button'
 const HomeHero: FC = () => {
   return (
     <Box id="hero" sx={{
-      backgroundImage: 'url("/images/home-hero.png")',
+      backgroundImage: 'url("/images/home-hero.svg")',
       backgroundSize: 'cover',
       backgroundPosition: 'center',
       backgroundRepeat: 'no-repeat',
