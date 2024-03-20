@@ -9,18 +9,18 @@ interface Data {
 
 export const data: Data[] = [
   {
-    title: 'General English Course',
-    description: 'Our General English Course enhances your basic language skills, the IELTS Preparation',
+    title: 'Principles of Customer Service',
+    description: 'Master customer service excellence with our Principles of Customer Service course',
     icon: < LocalLibraryIcon />,
   },
   {
-    title: 'IELTS Preparation Course',
-    description: 'Course prepares you for all modules with real exam practice',
+    title: 'Principles of Business Administration',
+    description: 'Lead with confidence using our Principles of Business Administration course',
     icon: <LocalLibraryIcon />,
   },
   {
-    title: 'Business English Course',
-    description: 'Course hones your professional communication and business vocabulary.',
+    title: 'Principles of Team Leading',
+    description: 'Foster teamwork for success with our Principles of Team Building course',
     icon: <LocalLibraryIcon />,
   },
 ]

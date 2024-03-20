@@ -37,77 +37,76 @@ const BorderLinearProgress = styled(LinearProgress, {
 const HomeFeature: FC = () => {
   return (
     <Box id="feature" sx={{ py: { xs: 10, md: 14 }, backgroundColor: 'background.paper' }}>
-        <Grid container spacing={3} sx={{ px: 7 }}>
-          <Grid item xs={12} md={5}>
-            <Box sx={{ position: 'relative' }}>
-              <Image src="/images/home-feature.svg" width={475} height={430} quality={97} alt="Feature 1" />
-            </Box>
-          </Grid>
-          <Grid item xs={12} md={7}>
-            <Typography
-              component="h2"
-              sx={{
-                position: 'relative',
-                fontSize: { xs: 20, md: 38 },
-                ml: { xs: 0, md: 4 },
-                mt: 2,
-                mb: 3,
-                lineHeight: 1,
-                fontWeight: 'bold'
-              }}
-            >
-              ARE you an aspiring Learner, Professional or a Global Explorer?
-            </Typography>
+      <Grid container spacing={3} sx={{ px: 7 }}>
+        <Grid item xs={12} md={5}>
+          <Box sx={{ position: 'relative' }}>
+            <Image src="/images/home-feature.svg" width={475} height={430} quality={97} alt="Feature 1" />
+          </Box>
+        </Grid>
+        <Grid item xs={12} md={7}>
+          <Typography
+            component="h2"
+            sx={{
+              position: 'relative',
+              fontSize: { xs: 20, md: 38 },
+              ml: { xs: 0, md: 4 },
+              mt: 2,
+              mb: 3,
+              lineHeight: 1,
+              fontWeight: 'bold'
+            }}
+          >
+            ARE you an ambitious Entrepreneur, a Seasoned Professional, or an individual with a keen eye for Organizational Success?
+          </Typography>
 
-            <Typography sx={{ fontSize: '18px', color: 'text.secondary', mb: 1, ml: { xs: 0, md: 4 } }}>
-              Dreaming of mastering the English language?
-            </Typography>
-            <Typography sx={{ fontSize: '18px', color: 'text.secondary', mb: 1, ml: { xs: 0, md: 4 } }}>
-              Aiming to score high in the IELTS exam for study or immigration?
-            </Typography>
-            <Typography sx={{ fontSize: '18px', color: 'text.secondary', mb: 1, ml: { xs: 0, md: 4 } }}>
-              Wishing to communicate in English fluently in business settings?
-            </Typography>
-            <Typography sx={{ color: 'text.secondary', mb: 1, ml: { xs: 0, md: 4 } }}>
-              Then we’ve got you covered.
-            </Typography>
+          <Typography sx={{ fontSize: '18px', color: 'text.secondary', mb: 1, ml: { xs: 0, md: 4 } }}>
+            Dreaming of mastering the principles of Business Management?
+          </Typography>
+          <Typography sx={{ fontSize: '18px', color: 'text.secondary', mb: 1, ml: { xs: 0, md: 4 } }}>
+            Aspiring to excel in customer service, the cornerstone of every successful enterprise?
+          </Typography>
+          <Typography sx={{ fontSize: '18px', color: 'text.secondary', mb: 1, ml: { xs: 0, md: 4 } }}>
+            Striving to understand the fundamental principles of Business Administration to lead your team with confidence?          </Typography>
+          <Typography sx={{ color: 'text.secondary', mb: 1, ml: { xs: 0, md: 4 } }}>
+            Then we’ve got you covered.
+          </Typography>
 
-            <Grid container spacing={2} sx={{ ml: { xs: 0, md: 2 } }}>
-              {data.map(({ title, description, icon }, index) => (
-                <Grid key={String(index)} item xs={12} md={6}>
-                  <Box sx={{ px: 2, py: 1.5, boxShadow: 1, borderRadius: 4, display: 'flex', alignItems: 'center' }}>
-                    <Box
-                      sx={{
-                        mr: 1,
-                        backgroundColor: 'primary.main',
-                        borderRadius: '50%',
-                        height: 36,
-                        width: 36,
-                        display: 'flex',
-                        alignItems: 'center',
-                        justifyContent: 'center',
-                        color: 'primary.contrastText',
-                        '& svg': {
-                          fontSize: 20,
-                        },
-                      }}
-                    >
-                      {icon}
-                    </Box>
-                    <Box sx={{ display: 'flex', flex: 1, flexDirection: 'column' }}>
-                      <Typography variant="h6" sx={{ fontSize: '1rem', mb: 1, color: 'secondary.main' }}>
-                        {title}
-                      </Typography>
-                      <Typography sx={{ lineHeight: 1.3, color: 'text.secondary' }} variant="subtitle1">
-                        {description}
-                      </Typography>
-                    </Box>
+          <Grid container spacing={2} sx={{ ml: { xs: 0, md: 2 } }}>
+            {data.map(({ title, description, icon }, index) => (
+              <Grid key={String(index)} item xs={12} md={6}>
+                <Box sx={{ px: 2, py: 1.5, boxShadow: 1, borderRadius: 4, display: 'flex', alignItems: 'center' }}>
+                  <Box
+                    sx={{
+                      mr: 1,
+                      backgroundColor: 'primary.main',
+                      borderRadius: '50%',
+                      height: 36,
+                      width: 36,
+                      display: 'flex',
+                      alignItems: 'center',
+                      justifyContent: 'center',
+                      color: 'primary.contrastText',
+                      '& svg': {
+                        fontSize: 20,
+                      },
+                    }}
+                  >
+                    {icon}
                   </Box>
-                </Grid>
-              ))}
-            </Grid>
+                  <Box sx={{ display: 'flex', flex: 1, flexDirection: 'column' }}>
+                    <Typography variant="h6" sx={{ fontSize: '1rem', mb: 1, color: 'secondary.main' }}>
+                      {title}
+                    </Typography>
+                    <Typography sx={{ lineHeight: 1.3, color: 'text.secondary' }} variant="subtitle1">
+                      {description}
+                    </Typography>
+                  </Box>
+                </Box>
+              </Grid>
+            ))}
           </Grid>
         </Grid>
+      </Grid>
     </Box>
   )
 }

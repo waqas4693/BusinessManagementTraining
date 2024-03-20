@@ -53,18 +53,13 @@ const HomeHero: FC = () => {
                     color: 'common.white'
                   }}
                 >
-                  Unlocking Language Brilliance
+                  Developing Business Skills
                 </Typography>
               </Box>
               <Box sx={{ mb: 4, width: { xs: '100%', md: '70%' } }}>
                 <Typography sx={{ color: 'common.white', lineHeight: 1.6 }} variant="h4">
                   {
-                    'Learn English, Transform Opportunities'
-                  }
-                </Typography>
-                <Typography sx={{ color: 'common.white', lineHeight: 1.6 }} variant="h4">
-                  {
-                    'Your gateway to global success'
+                    'Bringing Business management Theory To Life'
                   }
                 </Typography>
               </Box>
